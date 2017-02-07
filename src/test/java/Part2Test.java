@@ -1,7 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-public class FindSimpleGenePart2Test {
+public class Part2Test {
 
     @Test
     public void testFindSimpleGeneValidDna() {

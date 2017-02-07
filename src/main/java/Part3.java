@@ -11,4 +11,18 @@ public class Part3{
             else return false;
     }
 
+
+    public static String lastPart(String a, String b){
+
+        String result;
+        int aStartIndex = b.indexOf(a);
+
+        if(aStartIndex == -1) result=b;
+        else {
+            String bShorter = b.substring(aStartIndex + a.length());
+            result=bShorter;
+        }
+        return result;
+    }
+
 }
