@@ -1,6 +1,6 @@
 import edu.duke.URLResource;
 
-public class Part4 {
+public class ReadUrl {
 
     public static void readFromPage() {
 
@@ -9,11 +9,11 @@ public class Part4 {
         for (String word : ur.words()) {
             if(word.contains("youtube.com")){
                 int ytIndex = word.indexOf("youtube");
-                int indexStart = word.lastIndexOf("\"");
-                int indexEnd = word.indexOf("\"");
-                String sub1 = word.substring(0, indexStart);
-                String sub2 = word.substring(indexEnd);
-                System.out.println("http:"+sub1+"youtube.com"+sub2);
+                int urlStart = word.lastIndexOf("\"", ytIndex-1);
+                int urlEnd = word.indexOf("\"", ytIndex+3);
+                String sub1 = word.substring(urlStart, urlEnd);
+                System.out.println(sub1);
+
             }
         }
     }
