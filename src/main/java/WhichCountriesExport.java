@@ -35,6 +35,6 @@ public class WhichCountriesExport {
 
         listExporters(parser, "coffe");
 
-       // countryDetails(parser, "Germany");
+         countryDetails(parser, "Germany");
     }
 }
